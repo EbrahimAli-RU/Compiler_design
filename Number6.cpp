@@ -31,8 +31,16 @@ bool isValid(char str[]){
 }
 
 int main(){
-    char str[1000];
-    cin>>str;
+    string str;
+    freopen("in.txt","r",stdin);
+    //freopen("out.txt","w",stdout);
+    string ch;
+
+    while(cin>>ch){
+
+        str += ch;
+    }
+
     //strcpy(str,"0011");
 
     if(isOther(str)){
